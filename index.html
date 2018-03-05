@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8' />
+<title>Display a map</title>
+<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.0/mapbox-gl.js'></script>
+<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.0/mapbox-gl.css' rel='stylesheet' />
+<link href='./css/viewshed.css' rel='stylesheet' />
+</head>
+
+<body>
+<div id="mapBtnHolder">
+  <div class="mapBtn" id="mapTour">Tour the pyramids<span class="uparrow"></span></div>
+  <div class="mapBtn" id="mapBones">Bare bones</div>
+</div>
+<div id="mapContainer">
+  <div id='map'></div>
+  <div id="mapNote">
+    <p>Drag and drop the marker</p>
+  </div>
+</div>
+
+<script src='https://npmcdn.com/@turf/turf/turf.min.js'></script>
+<link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+
+<script src='./js/buildings.js'></script>
+<script src='./js/animationpoints.js'></script>
+<script src='./js/viewsheds.js'></script>
+
+</body>
+</html>
